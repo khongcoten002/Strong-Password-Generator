@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Random Password Generator</h1>
+        <div class="form-group">
+            <label for="passwordLengthSlider">Password Length: <span id="passwordLength">6</span></label>
+            <input type="range" class="form-control-range" id="passwordLengthSlider" min="6" max="20" value="6">
+        </div>
+        <button id="generatePassword" class="btn btn-primary">Generate Password</button>
+        <button id="copyPassword" class="btn btn-success">Copy Password</button>
+        <div id="passwordDisplay" class="mt-3"></div>
+    </div>
+</body>
+</html>
